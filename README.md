@@ -79,3 +79,72 @@ In the current exercise session, will practice not only the Scikit-Learn Python 
     <br>
 </div>
 
+# Logistic Regression with Python
+## Objectives
+*   Use scikit Logistic Regression to classify
+*   Understand confusion matrix
+
+In this notebook, will learn Logistic Regression, and then, create a model for a telecommunication company, to predict when its customers will leave for a competitor, so that they can take some action to retain the customers.
+
+<h1>Table of contents</h1>
+
+<div class="alert alert-block alert-info" style="margin-top: 20px">
+    <ol>
+        <li><a href="https://#about_dataset">About the dataset</a></li>
+        <li><a href="https://#preprocessing">Data pre-processing and selection</a></li>
+        <li><a href="https://#modeling">Modeling (Logistic Regression with Scikit-learn)</a></li>
+        <li><a href="https://#evaluation">Evaluation</a></li>
+        <li><a href="https://#practice">Practice</a></li>
+    </ol>
+</div>
+<br>
+<hr>
+
+<a id="ref1"></a>
+
+## What is the difference between Linear and Logistic Regression?
+
+While Linear Regression is suited for estimating continuous values (e.g. estimating house price), it is not the best tool for predicting the class of an observed data point. In order to estimate the class of a data point, we need some sort of guidance on what would be the <b>most probable class</b> for that data point. For this, we use <b>Logistic Regression</b>.
+
+<div class="alert alert-success alertsuccess" style="margin-top: 20px">
+<font size = 3><strong>Recall linear regression:</strong></font>
+<br>
+<br>
+    As you know, <b>Linear regression</b> finds a function that relates a continuous dependent variable, <b>y</b>, to some predictors (independent variables $x_1$, $x_2$, etc.). For example, simple linear regression assumes a function of the form:
+<br><br>
+$$
+y = \theta_0 + \theta_1  x_1 + \theta_2  x_2 + \cdots
+$$
+<br>
+and finds the values of parameters $\theta_0, \theta_1, \theta_2$, etc, where the term $\theta_0$ is the "intercept". It can be generally shown as:
+<br><br>
+$$
+ℎ_\theta(𝑥) = \theta^TX
+$$
+<p></p>
+
+</div>
+
+Logistic Regression is a variation of Linear Regression, used when the observed dependent variable, <b>y</b>, is categorical. It produces a formula that predicts the probability of the class label as a function of the independent variables.
+
+Logistic regression fits a special s-shaped curve by taking the linear regression function and transforming the numeric estimate into a probability with the following function, which is called the sigmoid function 𝜎:
+
+$$
+ℎ\_\theta(𝑥) = \sigma({\theta^TX}) =  \frac {e^{(\theta\_0 + \theta\_1  x\_1 + \theta\_2  x\_2 +...)}}{1 + e^{(\theta\_0 + \theta\_1  x\_1 + \theta\_2  x\_2 +\cdots)}}
+$$
+Or:
+$$
+ProbabilityOfaClass\_1 =  P(Y=1|X) = \sigma({\theta^TX}) = \frac{e^{\theta^TX}}{1+e^{\theta^TX}}
+$$
+
+In this equation, ${\theta^TX}$ is the regression result (the sum of the variables weighted by the coefficients), `exp` is the exponential function and $\sigma(\theta^TX)$ is the sigmoid or [logistic function](http://en.wikipedia.org/wiki/Logistic_function?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkML0101ENSkillsNetwork20718538-2021-01-01), also called logistic curve. It is a common "S" shape (sigmoid curve).
+
+So, briefly, Logistic Regression passes the input through the logistic/sigmoid but then treats the result as a probability:
+
+<img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork/labs/Module%203/images/mod_ID_24_final.png" width="400" align="center">
+
+The objective of the **Logistic Regression** algorithm, is to find the best parameters θ, for $ℎ\_\theta(𝑥)$ = $\sigma({\theta^TX})$, in such a way that the model best predicts the class of each case.
+
+### Customer churn with Logistic Regression
+
+A telecommunications company is concerned about the number of customers leaving their land-line business for cable competitors. They need to understand who is leaving. Imagine that you are an analyst at this company and you have to find out who is leaving and why.
