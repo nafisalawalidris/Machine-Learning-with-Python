@@ -148,3 +148,24 @@ The objective of the **Logistic Regression** algorithm, is to find the best para
 ### Customer churn with Logistic Regression
 
 A telecommunications company is concerned about the number of customers leaving their land-line business for cable competitors. They need to understand who is leaving. Imagine that you are an analyst at this company and you have to find out who is leaving and why.
+
+#  SVM (Support Vector Machines)
+## Objectives
+* Use scikit-learn to Support Vector Machine to classify
+In this notebook, will use SVM (Support Vector Machines) to build and train a model using human cell records, and classify cells to whether the samples are benign or malignant.
+SVM works by mapping data to a high-dimensional feature space so that data points can be categorized, even when the data are not otherwise linearly separable. A separator between the categories is found, then the data is transformed in such a way that the separator could be drawn as a hyperplane. Following this, characteristics of new data can be used to predict the group to which a new record should belong.
+
+<h1>Table of contents</h1>
+
+<div class="alert alert-block alert-info" style="margin-top: 20px">
+    <ol>
+        <li><a href="#load_dataset">Load the Cancer data</a></li>
+        <li><a href="#modeling">Modeling</a></li>
+        <li><a href="#evaluation">Evaluation</a></li>
+        <li><a href="#practice">Practice</a></li>
+    </ol>
+</div>
+<br>
+<hr>
+
+
