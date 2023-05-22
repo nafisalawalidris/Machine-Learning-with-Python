@@ -45,3 +45,9 @@ In this lab exercise, a popular machine learning algorithm, Decision Trees. You 
 </div>
 <br>
 <hr>
+
+# **Regression Trees**
+How to implement regression trees using ScikitLearn. Will show what parameters are important, how to train a regression tree, and finally how to determine our regression trees accuracy.
+## Objectives
+* Train a Regression Tree
+* Evaluate a Regression Trees Performance
