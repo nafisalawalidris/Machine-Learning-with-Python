@@ -24,3 +24,24 @@ In this sense, it is important to consider the value of k. Hopefully from this d
 </div>
 <br>
 <hr>
+
+# Decision Trees
+## Objectives
+* Develop a classification model using Decision Tree Algorithm
+In this lab exercise, a popular machine learning algorithm, Decision Trees. You will use this classification algorithm to build a model from the historical data of patients, and their response to different medications. Then you will use the trained decision tree to predict the class of an unknown patient, or to find a proper drug for a new patient.
+<h1>Table of contents</h1>
+
+<div class="alert alert-block alert-info" style="margin-top: 20px">
+    <ol>
+        <li><a href="#about_dataset">About the dataset</a></li>
+        <li><a href="#downloading_data">Downloading the Data</a></li>
+        <li><a href="#pre-processing">Pre-processing</a></li>
+        <li><a href="#setting_up_tree">Setting up the Decision Tree</a></li>
+        <li><a href="#modeling">Modeling</a></li>
+        <li><a href="#prediction">Prediction</a></li>
+        <li><a href="#evaluation">Evaluation</a></li>
+        <li><a href="#visualization">Visualization</a></li>
+    </ol>
+</div>
+<br>
+<hr>
