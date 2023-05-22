@@ -51,3 +51,31 @@ How to implement regression trees using ScikitLearn. Will show what parameters a
 ## Objectives
 * Train a Regression Tree
 * Evaluate a Regression Trees Performance
+
+# **Taxi Tip Prediction using Scikit-Learn and Snap ML**
+In this exercise session I consolidate the machine learning (ML) modeling skills by using a popular regression model: Decision Tree. Use a real dataset to train such a model. The dataset includes information about taxi tip and was collected and provided to the NYC Taxi and Limousine Commission (TLC) by technology providers authorized under the Taxicab & Livery Passenger Enhancement Programs (TPEP/LPEP). Use the trained model to predict the amount of tip paid. 
+
+In the current exercise session, will practice not only the Scikit-Learn Python interface, but also the Python API offered by the Snap Machine Learning (Snap ML) library. Snap ML is a high-performance IBM library for ML modeling. It provides highly-efficient CPU/GPU implementations of linear models and tree-based models. Snap ML not only accelerates ML algorithms through system awareness, but it also offers novel ML algorithms with best-in-class accuracy. For more information, please visit [snapml](https://ibm.biz/BdPfxy?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkML0101ENSkillsNetwork1047-2022-01-01) information page.
+
+## Table of Contents
+<div class="alert alert-block alert-info" style="margin-top: 10px">
+    <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#import_libraries">Import Libraries</a></li>
+        <li><a href="#dataset_analysis">Dataset Analysis</a></li>
+        <li><a href="#dataset_preprocessing">Dataset Preprocessing</a></li>
+        <li><a href="#dataset_split">Dataset Train/Test Split</a></li>
+        <li><a href="#dt_sklearn">Build a Decision Tree Regressor model with Scikit-Learn</a></li>
+        <li><a href="#dt_snap">Build a Decision Tree Regressor model with Snap ML</a></li>
+        <li><a href="#dt_sklearn_snap">Evaluate the Scikit-Learn and Snap ML Decision Tree Regressors</a></li>
+    </ol>
+</div>
+<br>
+<hr>
+
+<div id="Introduction">
+    <h2>Introduction</h2>
+    <br>The dataset used in this exercise session is publicly available here: https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page (all rights reserved by Taxi & Limousine Commission(TLC), City of New York). The TLC Yellow Taxi Trip Records of June, 2019 are used in this notebook. The prediction of the tip amount can be modeled as a regression problem. To train the model you can use part of the input dataset and the remaining data can be used to assess the quality of the trained model. First, let's download the dataset.
+    <br>
+</div>
+
